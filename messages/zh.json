@@ -1,0 +1,133 @@
+{
+  "Route":{
+    "login":"登录",
+    "logout":"退出登录",
+    "about":"关于",
+    "dashboard":"仪表盘",
+    "system-manage":"系统管理",
+    "internationalization":"国际化",
+    "features":"功能页",
+    "captcha":"验证码",
+    "viewer":"图片预览",
+    "user-manage":"用户管理",
+    "personal-center":"个人中心",
+    "/_not-found":"404",
+    "menu-manage":"菜单管理",
+    "technical-document":"技术文档",
+    "nextjs":"Next.js 文档",
+    "heroui":"Heroui 文档",
+    "prisma":"Prisma 文档",
+    "swiper":"Swiper",
+    "charts":"图表"
+  },
+  "Pages":{
+    "internationalization":{
+      "name":"国际化字段",
+      "zh":"中文",
+      "en":"英文"
+    },
+    "dashboard":{
+      "sales-total":"总销售额",
+      "sales-complete-rate":"前年同期业绩完成率",
+      "daily":"日同比",
+      "week":"周同比",
+      "page-view":"访问量",
+      "daily-visits":"日访问量",
+      "payment-number":"支付笔数",
+      "conversion-rate":"转化率",
+      "customer-satisfaction":"客户满意度",
+      "read":"阅读",
+      "published":"发布于",
+      "words":"字数",
+      "get-latest":"获取最新",
+      "github-log":"Github 提交日志",
+      "committed":"提交于"
+    },
+    "about":{
+      "dependencies":"生产环境依赖",
+      "dev-dependencies":"开发环境依赖"
+    },
+    "user-manage":{
+      "title":"用户",
+      "email":"邮箱",
+      "provider":"认证平台"
+    },
+    "captcha":{
+      "rotateCode": "图片旋转验证码",
+      "slideCodeSuccess": "验证成功，耗时 {seconds} 秒！",
+      "slideCode": "滑块验证码",
+      "pointsCode": "点选验证码",
+      "puzzleCode": "拼图验证码",
+      "operationCode": "运算验证码",
+      "subTitle": "验证码的主要用途是为了防止自动化程序（如机器人、爬虫等）恶意访问网站或应用程序，从而保护系统的安全性和数据的完整性，单纯前端的验证是不安全的，因为可以直接通过接口请求",
+      "verifyError": "很遗憾，答案错误，请再试一次",
+      "verifySuccess": "恭喜您，答案正确！",
+      "verify": "验证",
+      "graphicCode": "图形验证码"
+    },
+    "menu-manage":{
+      "title":"菜单",
+      "name":"菜单名称",
+      "nameTip":"请填写国际化字段",
+      "path":"路由地址",
+      "icon":"图标",
+      "iconTip":"请填写图标名称，如：ri:home-line",
+      "redirect":"重定向地址"
+    },
+    "swiper":{
+      "cube":"方块",
+      "flip":"翻转",
+      "card":"卡片特效",
+      "coverflow":"3d 流翻转",
+      "thumbnail":"缩略图",
+      "creative":"创意效果",
+      "visual":"横向循环焦点图片展示"
+    },
+    "charts":{
+      "area":"面积图",
+      "bar":"柱状图",
+      "line":"折线图",
+      "pie":"饼图",
+      "radar":"雷达图",
+      "radial":"径向图"
+    }
+  },
+  "Global":{
+    "createdAt":"创建时间",
+    "noData":"暂无数据",
+    "column-setting":"列设置",
+    "action":"操作",
+    "edit":"编辑",
+    "delete":"删除",
+    "asc":"升序",
+    "desc":"降序",
+    "hide":"隐藏",
+    "reset":"重置",
+    "search":"搜索",
+    "add":"新增",
+    "loading":"加载中...",
+    "enter":"请输入",
+    "select":"请选择",
+    "submit":"提交",
+    "parent":"父级",
+    "parentTip":"不选默认为顶级",
+    "emptyField":"请填写此字段",
+    "man":"男",
+    "women":"女",
+    "status":"状态",
+    "statusActive":"正常",
+    "statusInactive":"禁用",
+    "sort":"排序",
+    "close":"关闭"
+  },
+  "App":{
+    "light":"浅色模式",
+    "dark":"深色模式",
+    "full-screen":"全屏",
+    "exit-full-screen":"退出全屏",
+    "website-statistics":"网站统计",
+    "wechat":"微信",
+    "blog":"博客",
+    "back-top":"回到顶部"
+  }
+}

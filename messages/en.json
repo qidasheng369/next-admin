@@ -1,0 +1,133 @@
+{
+  "Route":{
+    "login":"Login",
+    "logout":"Logout",
+    "about":"About",
+    "dashboard":"Dashboard",
+    "system-manage":"System Manage",
+    "internationalization":"Internationalization",
+    "features":"Features",
+    "captcha":"Captcha",
+    "viewer":"Viewer",
+    "user-manage":"User Manage",
+    "personal-center":"Personal Center",
+    "/_not-found":"404",
+    "menu-manage":"Menu Manage",
+    "technical-document":"Technical Document",
+    "nextjs":"Next.js Document",
+    "heroui":"Heroui Document",
+    "prisma":"Prisma Document",
+    "swiper":"Swiper",
+    "charts":"Charts"
+  },
+  "Pages":{
+    "internationalization":{
+      "name":"Name",
+      "zh":"Chinese",
+      "en":"English"
+    },
+    "dashboard":{
+      "sales-total":"Gross sales",
+      "sales-complete-rate":"completion rate last year",
+      "daily":"Daily on-year",
+      "week":"Weekly on-year",
+      "page-view":"Page View",
+      "daily-visits":"Daily Visits",
+      "payment-number":"Payment Number",
+      "conversion-rate":"Conversion Rate",
+      "customer-satisfaction":"Customer Satisfaction",
+      "read":"Read",
+      "published":"Published",
+      "words":"Words",
+      "get-latest":"Get Latest",
+      "github-log":"Github Commits",
+      "committed":"Committed"
+    },
+    "about":{
+      "dependencies":"Dependencies",
+      "dev-dependencies":"DevDependencies"
+    },
+    "user-manage":{
+      "title":"User",
+      "email":"Email",
+      "provider":"Provider"
+    },
+    "captcha":{
+      "rotateCode": "Rotate Code",
+      "slideCodeSuccess": "The verification succeeds, taking {seconds} seconds!",
+      "slideCode": "Slide Code",
+      "pointsCode": "Points Code",
+      "puzzleCode": "Puzzle Code",
+      "operationCode": "Operational verification code",
+      "subTitle": "The main purpose of captCHA is to prevent automated programs (such as robots, crawlers, etc.) from accessing websites or applications maliciously, so as to protect the security of the system and the integrity of the data. Simple front-end verification is not secure, because it can be requested directly through the interface",
+      "verifyError": "Unfortunately, the answer is wrong. Please try again",
+      "verifySuccess": "Congratulations, the answer is correct!",
+      "verify": "Verify",
+      "graphicCode": "Graphic verification code"
+    },
+    "menu-manage":{
+      "title":"Menu",
+      "name":"Menu Name",
+      "nameTip":"Please fill in the internationalization field",
+      "path":"Path",
+      "icon":"Icon",
+      "iconTip":"Enter the icon name, for example, ri:home-line",
+      "redirect":"Redirect"
+    },
+    "swiper":{
+      "cube":"Cube",
+      "flip":"Flip",
+      "card":"Card Effect",
+      "coverflow":"3d Effect",
+      "thumbnail":"Thumbnail",
+      "creative":"Creative",
+      "visual":"Horizontal loop focus picture display"
+    },
+    "charts":{
+      "area":"Area Chart",
+      "bar":"Bar Chart",
+      "line":"Line Chart",
+      "pie":"Pie Chart",
+      "radar":"Radar Chart",
+      "radial":"Radial Chart"
+    }
+  },
+  "Global":{
+    "createdAt":"CreatedAt",
+    "noData":"No results",
+    "column-setting":"Column Setting",
+    "action":"Action",
+    "edit":"Edit",
+    "delete":"Delete",
+    "asc":"Asc",
+    "desc":"Desc",
+    "hide":"Hide",
+    "reset":"Reset",
+    "search":"Search",
+    "add":"Add",
+    "loading":"Loading...",
+    "enter":"Please enter",
+    "select":"Please select",
+    "submit":"Submit",
+    "parent":"Parent",
+    "parentTip":"The default is top-level",
+    "emptyField":"Please fill in this field",
+    "man":"Man",
+    "women":"Women",
+    "status":"Status",
+    "statusActive":"Active",
+    "statusInactive":"Inactive",
+    "sort":"Sort",
+    "close":"Close"
+  },
+  "App":{
+    "light":"Light Mode",
+    "dark":"Dark Mode",
+    "full-screen":"Full Screen",
+    "exit-full-screen":"Exit Full Screen",
+    "website-statistics":"Website Statistics",
+    "wechat":"Wechat",
+    "blog":"Blog",
+    "back-top":"Back Top"
+  }
+}

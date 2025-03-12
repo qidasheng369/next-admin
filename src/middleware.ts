@@ -2,7 +2,7 @@
  * @Author: 白雾茫茫丶<baiwumm.com>
  * @Date: 2025-01-03 15:16:03
  * @LastEditors: 齐大胜 782395122@qq.com
- * @LastEditTime: 2025-03-12 14:22:37
+ * @LastEditTime: 2025-03-12 15:42:15
  * @Description: 全局中间件
  */
 
@@ -15,12 +15,12 @@ import { responseMessage } from '@/lib/utils';
 export default auth(async (req) => {
 
   // 获取 JWT 令牌
+  const authjsSessionTokenStr = process.env.APP_ENV === 'development' ? 'authjs.session-token' : '__Secure-authjs.session-token';
   // const token = await getToken({ req, secret: process.env.AUTH_SECRET });
   // const authjsSessionToken = req?.cookies.get('authjs.session-token')?.value;
   const reqAuth = req.auth; // 其实callback的时候已经有req.auth了，这里只是演示如何获取
   const _cookieStore = await cookies(); 
 
-  const authjsSessionTokenStr = 'authjs.session-token';
   const cookieAuthjsSessionToken = _cookieStore.get(authjsSessionTokenStr)?.value;
   // 这里只用判断一个即可，或者用 || 也是可以的
   // const isLogin = !!token && !!authjsSessionToken && !!cookieAuthjsSessionToken && !!reqAuth;

@@ -1,8 +1,8 @@
 /*
  * @Author: 白雾茫茫丶<baiwumm.com>
  * @Date: 2024-12-20 09:19:01
- * @LastEditors: 白雾茫茫丶<baiwumm.com>
- * @LastEditTime: 2025-01-16 16:24:55
+ * @LastEditors: 齐大胜 782395122@qq.com
+ * @LastEditTime: 2025-03-12 14:36:45
  * @Description: Github 提交日志
  */
 'use client';
@@ -35,7 +35,7 @@ export default function GithubCommit() {
     loading,
     run,
   } = useRequest(async () => {
-    const response = await fetch('https://api.github.com/repos/baiwumm/next-admin/commits?page=1&per_page=10');
+    const response = await fetch('https://api.github.com/repos/qidasheng369/next-admin/commits?page=1&per_page=10');
     if (isSuccess(response.status)) {
       const result = await response.json();
       return result;

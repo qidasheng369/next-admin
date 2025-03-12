@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // output: 'standalone',
+  output: 'standalone',
   env: {
     APP_ENV: process.env.APP_ENV
   }

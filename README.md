@@ -1,3 +1,13 @@
+<!--
+ * @Author: 齐大胜 782395122@qq.com
+ * @Date: 2025-01-23 14:44:45
+ * @LastEditors: 齐大胜 782395122@qq.com
+ * @LastEditTime: 2025-03-12 14:56:07
+ * @FilePath: /cp-next-admin/README.md
+ * @Description: 
+ * 
+ * Copyright (c) 2025 by 齐大胜 email: 782395122@qq.com, All Rights Reserved. 
+-->
 <p align="center"><img width="100" src="./public/logo.png" alt="Next Admin"></p>
 <h1 align="center">Next Admin</h1>
 <p align="center">挖掘发现 Next.js 的乐趣所在</p>
@@ -7,11 +17,11 @@
 
 - 🍁 技术栈： [Next.js15](https://nextjs.org/)、[NextUI](https://nextui.org/)、[TailwindCSS](https://www.tailwindcss.cn/)、[PostgreSQL](https://www.postgresql.org/)、[Prisma](https://prisma.yoga/)
 
-- 🍂 线上预览： [https://next.baiwumm.com/](https://next.baiwumm.com/)
+- 🍂 线上预览： [https://next.baiwumm.com/](https://next-admin.xworker.icu/)
 
-- [🪹 github 仓库地址](https://github.com/baiwumm/next-admin/)
+- [🪹 github 仓库地址](https://github.com/qidasheng369/next-admin/)
 
-- [🪺 码云仓库地址](https://gitee.com/baiwumm/next-admin/)
+- [🪺 码云仓库地址](https://gitee.com/qidasheng369/next-admin/)
 
 - ❤️ star：**如果可以的话，请顺手给个star，表示对作者的鼓励，万分感谢！**
 
@@ -36,7 +46,7 @@ DATABASE_URL="postgresql://postgres:123456@localhost:5432/next-admin?schema=publ
 
 2. 拉取项目代码
 ```powershell
-git clone https://github.com/baiwumm/next-admin.git
+git clone https://github.com/qidasheng369/next-admin.git
 cd next-admin
 ```
 
@@ -78,8 +88,8 @@ pnpm build
 ## 🍄 总结
 1. 本项目没有经过严格的测试，有可能存在一定的 `Bug`。
 2. 本项目仅供学习交流使用，请勿用于商业用途。
-3. 欢迎提交 [Issues](https://github.com/baiwumm/next-admin/issues) 和 [PR](https://github.com/baiwumm/next-admin/pulls)，一起完善本项目。
+3. 欢迎提交 [Issues](https://github.com/qidasheng369/next-admin/issues) 和 [PR](https://github.com/qidasheng369/next-admin/pulls)，一起完善本项目。
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=baiwumm/next-admin&type=Date)](https://star-history.com/#baiwumm/next-admin&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=qidasheng369/next-admin&type=Date)](https://star-history.com/#qidasheng369/next-admin&Date)

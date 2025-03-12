@@ -2,33 +2,36 @@
  * @Author: 白雾茫茫丶<baiwumm.com>
  * @Date: 2025-01-03 15:16:03
  * @LastEditors: 齐大胜 782395122@qq.com
- * @LastEditTime: 2025-02-22 20:14:55
+ * @LastEditTime: 2025-03-12 14:22:37
  * @Description: 全局中间件
  */
 
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
-import { getToken } from "next-auth/jwt";
 
+// import { getToken } from "next-auth/jwt";
 import { auth, /* signOut */ } from '@/auth';
 import { responseMessage } from '@/lib/utils';
 export default auth(async (req) => {
 
   // 获取 JWT 令牌
-  const token = await getToken({ req, secret: process.env.AUTH_SECRET });
-  const authjsSessionToken = req?.cookies.get('authjs.session-token')?.value;
-  const reqAuth = req.auth; // 其实callback的时候以及有req.auth了，这里只是演示如何获取
+  // const token = await getToken({ req, secret: process.env.AUTH_SECRET });
+  // const authjsSessionToken = req?.cookies.get('authjs.session-token')?.value;
+  const reqAuth = req.auth; // 其实callback的时候已经有req.auth了，这里只是演示如何获取
   const _cookieStore = await cookies(); 
-  const cookieAuthjsSessionToken = _cookieStore.get('authjs.session-token')?.value;
+
+  const authjsSessionTokenStr = 'authjs.session-token';
+  const cookieAuthjsSessionToken = _cookieStore.get(authjsSessionTokenStr)?.value;
   // 这里只用判断一个即可，或者用 || 也是可以的
-  const isLogin = !!token && !!authjsSessionToken && !!cookieAuthjsSessionToken && !!reqAuth;
+  // const isLogin = !!token && !!authjsSessionToken && !!cookieAuthjsSessionToken && !!reqAuth;
+  const isLogin = !!cookieAuthjsSessionToken && !!reqAuth;
   
   // console.log("🚀 ~ auth ~ token:", token);
-  // console.log('auth middleware: req.auth', req.auth);
+  console.log('auth middleware: req.auth', req.auth);
 
   // console.log("🚀 ~ auth ~ req: cookies.['authjs.session-token']", authjsSessionToken);
-  // console.log('cookieAuthjsSessionToken', cookieAuthjsSessionToken);
-  // console.log('cookieAll', _cookieStore.getAll());
+  console.log('cookieAuthjsSessionToken', cookieAuthjsSessionToken);
+  console.log('cookieAll', _cookieStore.getAll());
 
 
   // 路由白名单，例如登录页
@@ -45,13 +48,15 @@ export default auth(async (req) => {
     // 清空名为 "authjs.session-token" 和 "token" 的 Cookie
     const response = NextResponse.json(responseMessage(null, '退出成功', 0));
 
+    console.log('signout authjsSessionTokenStr: ', authjsSessionTokenStr)
+    
     // 这才是清除cookie的正确思路
-    _cookieStore.delete('authjs.session-token');
+    _cookieStore.delete(authjsSessionTokenStr);
     
     // 清除 Cookie，相应前处理，但是本次已经获取到了
-    response?.headers.set(
+    response?.headers.append(
       "Set-Cookie",
-      "authjs.session-token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; SameSite=Lax"
+      `${authjsSessionTokenStr}=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; SameSite=Lax`
     );
 
     // 这个服务器端调用退出登录，清除cookie还是有问题，无法退出到登录页

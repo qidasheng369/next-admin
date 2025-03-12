@@ -1,8 +1,8 @@
 /*
  * @Author: 白雾茫茫丶<baiwumm.com>
  * @Date: 2024-12-18 17:04:59
- * @LastEditors: 白雾茫茫丶<baiwumm.com>
- * @LastEditTime: 2025-01-16 16:28:25
+ * @LastEditors: 齐大胜 782395122@qq.com
+ * @LastEditTime: 2025-03-12 14:35:50
  * @Description: 掘金文章列表
  */
 'use client';
@@ -38,7 +38,7 @@ export default function JuejinArticle() {
     async (params) => {
       const common = {
         sort_type: 2,
-        user_id: '1917147257534279',
+        user_id: '984795790719005',
       };
       const result = await getJuejinArticle({
         ...params,

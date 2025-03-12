@@ -1,8 +1,8 @@
 /*
  * @Author: 白雾茫茫丶<baiwumm.com>
  * @Date: 2024-12-23 09:55:59
- * @LastEditors: 白雾茫茫丶<baiwumm.com>
- * @LastEditTime: 2025-01-16 16:56:15
+ * @LastEditors: 齐大胜 782395122@qq.com
+ * @LastEditTime: 2025-03-12 14:28:35
  * @Description: 底部版权信息
  */
 'use client';
@@ -45,11 +45,11 @@ export default function GlobalFooter() {
         {/* 备案 */}
         <div className="flex items-center gap-3 max-sm:flex-col">
           {renderIcp('https://beian.miit.gov.cn/#/Integrated/index', '/icp.png', process.env.NEXT_PUBLIC_SITE_ICP)}
-          {renderIcp(
+          {/* {renderIcp(
             'https://beian.mps.gov.cn/#/query/webSearch',
             '/gongan.png',
             process.env.NEXT_PUBLIC_SITE_GUAN_ICP,
-          )}
+          )} */}
         </div>
         {/* 社交图标 */}
         <div className="max-sm:order-first flex items-center">
